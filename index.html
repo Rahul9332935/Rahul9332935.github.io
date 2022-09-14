@@ -43,9 +43,35 @@
                         aperiam, soluta quod natus quidem possimus necessitatibus similique, in, doloremque ullam
                         inventore fugit itaque quam! Quam, iusto blanditiis?</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-links">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="slills">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designing Web interface</li>
+                            <li><span>Web Development</span> <br>Web app Development</li>
+                            <li><span>Backend Devloper</span> <br>Knowledge of Backend Frameworks <br>Knowledge of
+                                Databases & API<br>Server Handling </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span> <br> Fresher (Don't have any Experience yet)</li>
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span> <br>Java Backend Developer from Masai School </li>
+                            <li><span>2018-2021</span> <br> Graduation(Math Honours) from C. M. Science
+                                College,Darbhanga <br>
+                            </li>
+                            <li><span>2016-2018</span> <br> 10th+2 from Kendriya Vidyalaya, Jawaharnagar<br></li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -54,3 +80,21 @@
 
 
 </body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
