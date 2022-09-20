@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfoilio</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
     <script src="https://kit.fontawesome.com/2aa453459c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -41,9 +44,10 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptates explicabo incidunt
-                        aperiam, soluta quod natus quidem possimus necessitatibus similique, in, doloremque ullam
-                        inventore fugit itaque quam! Quam, iusto blanditiis?</p>
+                    <p>An aspiring Java Backend Developer with 1000+ hours of coding
+                        experience in Java, and JavaScript. I am a highly passionate
+                        Backend developer who loves creating APIs, and working with
+                        databases.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -83,135 +87,209 @@
     <div id="tech">
         <div class="container">
             <h1 class="sub-title">Tech-Stack</h1>
-            <div>
-                <img class="timg" src="images/java.png" alt="">
-            </div>
-        </div>
-
-    </div>
-    <!-- skill  -->
-
-    <!-- -----------portfolio------------ -->
-
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Social media App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti dolorem
-                            id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam excepturi
-                            commodi, magni architecto sequi modi.</p>
-                        <div class="buttonw">
-                            <button>Git-Hub</button>
-                            <button>Live</button>
-                        </div>
-                    </div>
+            <div id="tech-stack">
+                <div>
+                    <i class="fa-brands fa-java"></i>
                 </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>Social media App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti dolorem
-                            id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam excepturi
-                            commodi, magni architecto sequi modi.</p>
-                        <div class="buttonw">
-                            <button>Git-Hub</button>
-                            <button>Live</button>
-                        </div>
-
-                    </div>
-
+                <div>
+                    <i class="fa-brands fa-html5"></i>
                 </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Social media App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti dolorem
-                            id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam excepturi
-                            commodi, magni architecto sequi modi.</p>
-                        <div class="buttonw">
-                            <button>Git-Hub</button>
-                            <button>Live</button>
-                        </div>
-                    </div>
+                <div>
+                    <i class="fa-brands fa-css3"></i>
                 </div>
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Social media App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti dolorem
-                            id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam excepturi
-                            commodi, magni architecto sequi modi.</p>
-                        <div class="buttonw">
-                            <button>Git-Hub</button>
-                            <button>Live</button>
-                        </div>
-                    </div>
+                <div>
+                    <i class="fa-brands fa-square-js"></i>
                 </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>Social media App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti dolorem
-                            id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam excepturi
-                            commodi, magni architecto sequi modi.</p>
-                        <div class="buttonw">
-                            <button>Git-Hub</button>
-                            <button>Live</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Social media App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti dolorem
-                            id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam excepturi
-                            commodi, magni architecto sequi modi.</p>
-                        <div class="buttonw">
-                            <button>Git-Hub</button>
-                            <button>Live</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- --------------contact---------------- -->
-    <div id="contact">
-        <div class="container flexf">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><a href="mailto:rahul9332935@gmail.com"><i class="fa-solid fa-paper-plane"></i>
-                        rahul9332935@gmail.com</a></p>
-                <p> <a href="tel:+918226956764"> <i class="fa-solid fa-square-phone"></i>+918226956764</a></p>
-                <div class="social-icons">
-                    <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a target="_blank" href=""><i class="fa-brands fa-twitter-square"></i></a>
-                    <a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a target="_blank" href="m/https://www.linkedin.com/in/rahul9332/"><i
-                            class="fa-brands fa-linkedin"></i></a> <br>
-                    <a href="images/Rahul_Kumar_Resume.pdf" download id="btn4" class="btn btn2">Resume</a>
+                <div>
+                    <i class="fa-brands fa-square-github"></i>
                 </div>
 
             </div>
-            <div class="contact-right">
-                <form action="">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" id="btn3" class="btn btn2">Submit</button>
-                </form>
+
+        </div>
+        <!-- skill  -->
+
+        <!-- -----------portfolio------------ -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/cal_650x800.png" alt="">
+                        <div class="layer">
+                            <h3>Calculator</h3>
+                            <p>It use to do some basic mathmatical calculation. <br> <span
+                                    class="ts">Tech-Stack</span><br>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+
+                            </ul>
+                            <ul>
+                                <li>It was a solo project, executed in two hours</li>
+                            </ul>
+                            </p>
+                            <div class="buttonw">
+                                <button
+                                    onclick="
+                                window.location.href='https://github.com/masai-course/Rahul_fw19_0544/blob/268fbc0752699c67e204991de54d67ce84bcd4a5/unit-2/sprint-3/day-3/we/MASAI%20CALCULATOR.html';  ">Git-Hub</button>
+                                <button target="_blank"
+                                    onclick="window.location.href='https://classy-valkyrie-5c4903.netlify.app/';  ">Live</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/youtude1_650x800.png" alt="">
+                        <div class="layer">
+                            <h3>YouTube (clone)</h3>
+                            <p>
+                                It is Fully Functional and uses API provided by
+                                Google(Youtube). <br>
+                                <span class="ts">Features:</span> <br>
+                                <span>The user easily searches any YouTube videos
+                                    and also plays.</span> <br>
+                                <span class="ts">TechStack</span> <br>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+
+                            </ul>
+                            <ul>
+                                <li>It was a solo project, executed in two hours</li>
+                            </ul>
+                            </p>
+                            <div class="buttonw">
+                                <button
+                                    onclick="window.location.href='https://github.com/masai-course/Rahul_fw19_0544/tree/master/unit-3/sprint-3/day-1/you/YOUTUBE%20MINI%20APP%20I'; ">Git-Hub</button>
+                                <button
+                                    onclick="window.location.href='https://profound-bonbon-dc9a0d.netlify.app/'; ">Live</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="work">
+                        <img src="images/Asos3_650x800.png" alt="">
+                        <div class="layer">
+                            <h3>ASOS.COM(CLONE)</h3>
+                            <p>
+                                ASOS plc is a British online fashion and cosmetic retailer.
+                                The company was founded in 2000 in London, primarily
+                                aimed at young adults. <br>
+                                <span class="ts">Features:</span> <br>
+                            <ul>
+                                <li>User can login signup.</li>
+                                <li>User can buy any product.</li>
+                            </ul>
+                            <span class="ts">TechStack</span>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <span>A collaborative project built by a team of 5 software
+                                developers, executed in 5 days
+                                and i have created mens and women Homepage.
+                            </span>
+                            </p>
+                            <div class="buttonw">
+                                <button
+                                    onclick="window.location.href='https://github.com/arsalanshaikhh/asos.com-clone-Unit2'; ">Git-Hub</button>
+                                <button
+                                    onclick="window.location.href='https://steady-swan-edc8d5.netlify.app/'; ">Live</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Social media App</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti
+                                dolorem
+                                id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam
+                                excepturi
+                                commodi, magni architecto sequi modi.</p>
+                            <div class="buttonw">
+                                <button>Git-Hub</button>
+                                <button>Live</button>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="work">
+                        <img src="images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Social media App</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti
+                                dolorem
+                                id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam
+                                excepturi
+                                commodi, magni architecto sequi modi.</p>
+                            <div class="buttonw">
+                                <button>Git-Hub</button>
+                                <button>Live</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Social media App</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti
+                                dolorem
+                                id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam
+                                excepturi
+                                commodi, magni architecto sequi modi.</p>
+                            <div class="buttonw">
+                                <button>Git-Hub</button>
+                                <button>Live</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © Rahul. Made with <i class="fa-solid fa-heart"></i> </p>
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
         </div>
-    </div>
+
+        <!-- --------------contact---------------- -->
+        <div id="contact">
+            <div class="container  flexf">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:rahul9332935@gmail.com"><i class="fa-solid fa-paper-plane"></i>
+                            rahul9332935@gmail.com</a></p>
+                    <p> <a href="tel:+918226956764"> <i class="fa-solid fa-square-phone"></i>+918226956764</a></p>
+                    <div class="social-icons">
+                        <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="m/https://www.linkedin.com/in/rahul9332/"><i
+                                class="fa-brands fa-linkedin"></i></a> <br>
+                        <a href="images/Rahul_Kumar_Resume.pdf" download id="btn4" class="btn btn2">Resume</a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" id="btn3" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div id="container">
+                <div class="copyright">
+                    <p>Copyright © Rahul. Made with <i class="fa-solid fa-heart"></i> </p>
+                </div>
+            </div>
+
+        </div>
 
 </body>
 <script>
@@ -231,4 +309,17 @@
         document.getElementById(tabname).classList.add("active-tab")
     }
 
+</script>
+<script>
+    GitHubCalendar(".calendar", "Rahul9332935");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "Rahul9332935", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "Rahul9332935", {
+        proxy(Rahul9332935) {
+            return fetch(`https://your-proxy.com/github?user=$Rahul9332935`)
+        }
+    }).then(r => r.text())
 </script>
