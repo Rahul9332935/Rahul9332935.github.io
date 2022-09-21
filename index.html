@@ -19,13 +19,16 @@
             <nav>
                 <!-- <img src="images/logo.png" class="logo" alt=""> -->
                 <span id="logol"><span>R</span>ahul</span>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">MY WORK</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
             </nav>
             <div class="header-text">
                 <p>Full-Stack Web Devloper</p>
@@ -204,57 +207,64 @@
                         </div>
                     </div>
                     <!-- <div class="work">
-                        <img src="images/work-1.png" alt="">
-                        <div class="layer">
-                            <h3>Social media App</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti
-                                dolorem
-                                id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam
-                                excepturi
-                                commodi, magni architecto sequi modi.</p>
-                            <div class="buttonw">
-                                <button>Git-Hub</button>
-                                <button>Live</button>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="work">
-                        <img src="images/work-2.png" alt="">
-                        <div class="layer">
-                            <h3>Social media App</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti
-                                dolorem
-                                id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam
-                                excepturi
-                                commodi, magni architecto sequi modi.</p>
-                            <div class="buttonw">
-                                <button>Git-Hub</button>
-                                <button>Live</button>
-                            </div>
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti
+                            dolorem
+                            id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam
+                            excepturi
+                            commodi, magni architecto sequi modi.</p>
+                        <div class="buttonw">
+                            <button>Git-Hub</button>
+                            <button>Live</button>
                         </div>
                     </div>
-                    <div class="work">
-                        <img src="images/work-3.png" alt="">
-                        <div class="layer">
-                            <h3>Social media App</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti
-                                dolorem
-                                id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam
-                                excepturi
-                                commodi, magni architecto sequi modi.</p>
-                            <div class="buttonw">
-                                <button>Git-Hub</button>
-                                <button>Live</button>
-                            </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti
+                            dolorem
+                            id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam
+                            excepturi
+                            commodi, magni architecto sequi modi.</p>
+                        <div class="buttonw">
+                            <button>Git-Hub</button>
+                            <button>Live</button>
                         </div>
-                    </div> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repellendus corrupti
+                            dolorem
+                            id? Laudantium, illum animi in ad tempore velit earum explicabo nostrum aliquam
+                            excepturi
+                            commodi, magni architecto sequi modi.</p>
+                        <div class="buttonw">
+                            <button>Git-Hub</button>
+                            <button>Live</button>
+                        </div>
+                    </div>
+                </div> -->
                 </div>
             </div>
         </div>
-        <div class="calendar">
-            <!-- Loading stuff -->
-            Loading the data just for you.
-        </div>
+        <!-- git calender=============== -->
+        <!-- <div id="git">
+            <div id="container">
+                <div class="calendar">
+                    <Loading stuff
+    Loading the data just for you.
+    </div>
+    </div>
+
+    </div> -->
+
 
         <!-- --------------contact---------------- -->
         <div id="contact">
@@ -275,12 +285,13 @@
 
                 </div>
                 <div class="contact-right">
-                    <form action="">
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" id="btn3" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
             <div id="container">
@@ -319,7 +330,43 @@
     // Use a proxy
     GitHubCalendar(".calendar", "Rahul9332935", {
         proxy(Rahul9332935) {
-            return fetch(`https://your-proxy.com/github?user=$Rahul9332935`)
+            return fetch(`https://your-proxy.com/github?user=${Rahul9332935}`)
         }
     }).then(r => r.text())
+</script>
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw2ilhqf4kxHVmdtdQvJoN_2vedk_B3LmBhMm_R4e5HBSCx3UEAZmJcviPkrPm8QK--8g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script>
+
+
+
 </script>
