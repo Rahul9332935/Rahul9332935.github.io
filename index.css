@@ -376,6 +376,78 @@ form #btn3{
     margin-left: 0px;
     padding: 7px 30px;
 }
+/*======================== skill======================== */
+#skill{
+    margin-bottom: 10px;
+}
+#skill_card{
+    border: 1px solid transparent;
+    border-radius:10px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 50px;
+    background-color: #262626;
+    cursor: pointer;
+   
+}
+.skills{
+    /* border: 1px solid white; */
+    background-color: #080808;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ebe1e1;
+}
+.h11{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white
+}
+#stati{
+    /* display: grid;
+    border: 1px solid red;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #262626; 
+   justify-content: center; */
+   border: 1px solid transparent;
+   border-radius:10px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   padding: 50px 170px;
+   background-color: #262626;
+   cursor: pointer;
+   gap: 15%;
+}
+
+.st{
+    /* border: 1px solid white;
+    background-color: #080808;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 10px;
+    width: 200px; */
+    background-color: #080808;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ebe1e1;
+    
+    
+}
+
+
+
 /*-------------- extra------------- */
 .ts{
     color: black;
@@ -469,10 +541,42 @@ nav .fa-solid {
    .layer {
     font-size: 13px;
    }
+
+
+   #skill_card{
+    display: grid;
+    padding: 25px;
+    grid-template-columns: auto;
+   }
+   #stati{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 30px;
+    gap: 30px;
+   }
+   .skills{
+    padding: 50px 20px;
+  
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ebe1e1;
 }
+
+
+}
+
 #msg{
     color: #61b752;
     margin-top: -40px;
     display: block;
     margin-bottom: 20px;
 }
+/* .calendar {
+    width: 80%;
+    display: block;
+    overflow: hidden;
+
+    color: white;
+    background-color: ;
+} */
