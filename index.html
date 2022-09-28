@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
+
     <script src="https://kit.fontawesome.com/2aa453459c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,8 +22,10 @@
                 <ul id="sidemenu">
                     <li><a href="#header">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#tech">TECH-STACK</a></li>
+                    <li><a href="#skill">SKILL</a></li>
                     <li><a href="#portfolio">MY WORK</a></li>
+                    <!-- <li><a href="#">STATISTICS</a></li> -->
                     <li><a href="#contact">CONTACT</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -42,14 +45,14 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/IMG_-4f5wrs.png" alt="">
+                    <img src="images/rahul1.jfif" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>An aspiring Java Backend Developer with 1000+ hours of coding
-                        experience in Java, and JavaScript. I am a highly passionate
-                        Backend developer who loves creating APIs, and working with
-                        databases.</p>
+                    <p>A passionate JAVA Back-End Developer, Dedicated to developing robust applications that interact
+                        with the Backend part of web applications. Extensive expertise in website architecture, design,
+                        web design, and web API designs, Problem-solving mindset with a goal to optimize my application
+                        for better stability and speed. Love to work in a team.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -88,22 +91,31 @@
     <!-- ------------ Tech Slack---------------------- -->
     <div id="tech">
         <div class="container">
-            <h1 class="sub-title">Tech-Stack</h1>
+            <h1 class="sub-title tecs">Tech-Stack</h1>
             <div id="tech-stack">
                 <div>
-                    <i class="fa-brands fa-java"></i>
+                    <img src="images/HTML5_Logo_512.png" alt="">
+                    <h2>JAVA</h2>
                 </div>
                 <div>
-                    <i class="fa-brands fa-html5"></i>
+                    <img src="images/html.png" alt="">
+                    <h2>HTML</h2>
                 </div>
                 <div>
-                    <i class="fa-brands fa-css3"></i>
+                    <img src="images/css.png" alt="">
+                    <h2>CSS</h2>
                 </div>
                 <div>
-                    <i class="fa-brands fa-square-js"></i>
+                    <img src="images/JavaScript-logo.png" alt="">
+                    <h2 id="jslo">JavaScript</h2>
                 </div>
                 <div>
-                    <i class="fa-brands fa-square-github"></i>
+                    <img src="images/MySQL-Logo.png" alt="">
+                    <h2>Mysql</h2>
+                </div>
+                <div>
+                    <img src="images/dsa.png" alt="">
+                    <h2>DSA</h2>
                 </div>
 
             </div>
@@ -294,28 +306,39 @@
                     <div class="st">
                         <p class="h11">300+</p>
                         <p>DSA Problems</p>
-                        
+
                     </div>
                     <div class="st">
                         <p class="h11">100+</p>
                         <p>Hours of Soft-Skills</p>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
         </div>
 
-        <!-- git calender=============== -->
-        <!-- <div id="git">
-            <div id="container">
-                <div class="calendar">
 
-                </div>
+
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- git calender=============== -->
+    <!-- <div id="git"> -->
+    <div id="Git">
+        <div class="container">
+            <h1 class="sub-title">My Contributions</h1>
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
             </div>
-
-        </div> -->
-
+        </div>
+        <!-- </div>
+            </div> -->
 
 
         <!-- --------------contact---------------- -->
@@ -328,7 +351,8 @@
                     <p> <a href="tel:+918226956764"> <i class="fa-solid fa-square-phone"></i>+918226956764</a></p>
                     <div class="social-icons">
                         <!-- <a target="_blank" href=""><i class="fa-brands fa-twitter-square"></i></a> -->
-                        <a target="_blank" href="https://github.com/Rahul9332935"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://github.com/Rahul9332935"><i
+                                class="fa-brands fa-github"></i></a>
                         <a target="_blank" href="https://www.linkedin.com/in/rahul9332/"><i
                                 class="fa-brands fa-linkedin"></i></a> <br>
                         <a href="images/Rahul_Kumar_Resume.pdf" download id="btn4" class="btn btn2">Resume</a>
@@ -373,6 +397,7 @@
 
 </script>
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
 <script>
     GitHubCalendar(".calendar", "Rahul9332935");
 
