@@ -204,6 +204,7 @@ nav ul li a:hover::after{
     /* reduce padding */
 }
 #tech-stack div{
+    
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -563,11 +564,20 @@ nav .fa-solid {
    #tech{
     margin-top: -80px;
    }
+   #tech-stack{
+    grid-template-columns: repeat(auto, 2fr);
+
+   }
+
    #tech-stack >div{
+    margin: auto;
     margin-top: -15px;
     margin-bottom: -15px;
-    width: 70%;
+    width: 80%;
+
+    /* //error */
    }
+   
 
    /* .he */
    .header-text{
@@ -746,11 +756,14 @@ nav .fa-solid {
        }
 
        #tech-stack{
+        
         margin-top: 30px;
         padding: 40px 20px;
         margin-bottom: 30px;
         grid-template-columns: repeat(3,1fr);
-    }
+        }
+
+        
 
     .work-list{
         margin-top: 10px;
