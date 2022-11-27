@@ -478,10 +478,12 @@ form #btn3{
     font-size: 20px;
     font-weight: 600;
     color: #ebe1e1;
+    transition: 00.5s;
 }
 .skills:hover{
     background-color: #ff004f;
     color: black;
+    transform: scale(102%);
 }
 .h11{
     font-weight: 700;
@@ -522,12 +524,14 @@ form #btn3{
     font-size: 20px;
     font-weight: 600;
     color: #ebe1e1;
+    transition: 0.5s;
     
     
 }
 .st:hover{
     background-color: #ff004f;
     color: #080808;
+    transform: scale(102%);
 }
 
 .js-calendar-graph-svg{
@@ -711,6 +715,12 @@ nav .fa-solid {
     margin-bottom: 20px;
 }
 @media only screen and (max-width: 1022px) and (min-width: 601px) {
+    
+    #header1{
+        padding-top: 100px;
+       margin-bottom: -200px;
+    }
+
 
     nav .fa-solid {
         display:block;
