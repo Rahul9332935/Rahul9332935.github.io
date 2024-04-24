@@ -185,8 +185,8 @@ nav ul li a:hover::after{
 }
 /* --------tech Stack----------- */
 #tech{
-   padding: 30px 0 30px 0;
-   margin-top: -50px;
+    padding: 30px 0;
+    margin-top: -50px;
 }
 .timg{
     background-color: transparent;
@@ -194,7 +194,6 @@ nav ul li a:hover::after{
     
 }
 #tech-stack{
-    
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
@@ -204,22 +203,24 @@ nav ul li a:hover::after{
     /* reduce padding */
 }
 #tech-stack div{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
     cursor: pointer;
     transition: 0.5s;
     background-color: #080808;
-   
 }
 #tech-stack div img{
-    width: 100%;
+    width: 50%;
+    max-height: 120px;
 }
 #tech-stack div h2{
     margin: auto;
     padding-top: 15px;
-    
 }
 #tech-stack div:hover{
     color: rgb(203, 192, 109);
@@ -491,51 +492,36 @@ form #btn3{
     margin-bottom: 10px;
     color: white
 }
+
+/* this code is for statistic  */
 #stati{
-    /* display: grid;
-    border: 1px solid red;
-    grid-template-columns: repeat(3,1fr);
-    background-color: #262626; 
-   justify-content: center; */
-   border: 1px solid transparent;
-   border-radius:10px;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   padding: 50px 170px;
-   background-color: #262626;
-   cursor: pointer;
-   gap: 15%;
+    border: 1px solid transparent;
+    border-radius:10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    background-color: #262626;
+    cursor: pointer;
+    gap: 10%;
 }
 
 .st{
-    /* border: 1px solid white;
     background-color: #080808;
     border-radius: 10px;
-    text-align: center;
-    padding: 50px 10px;
-    width: 200px; */
-    background-color: #080808;
-    border-radius: 10px;
-    padding: 40px;
+    padding: 10px;
     text-align: center;
     line-height: 40px;
     font-size: 20px;
     font-weight: 600;
     color: #ebe1e1;
-    transition: 0.5s;
-    
-    
+    transition: 0.5s;  
 }
 .st:hover{
     background-color: #ff004f;
     color: #080808;
     transform: scale(102%);
-}
-
-.js-calendar-graph-svg{
-    width: 100%;
 }
 
 
